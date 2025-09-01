@@ -14,10 +14,6 @@ return new class extends Migration
         Schema::create('provinces', function (Blueprint $table) {
             $table->id();
             $table->string('name')->unique();
-            $table->enum('type', ['کافه', 'رستوران']); // نوع مجموعه
-            $table->foreignId('province_id')->constrained('provinces')->cascadeOnDelete();
-            $table->string('phone')->unique(); // شماره تماس
-            $table->string('logo_path')->nullable(); // مسیر ذخیره لوگو
             $table->timestamps();
         });
     }
