@@ -31,4 +31,8 @@ class CategoryController extends Controller
         $category->delete();
         return response()->json(['message' => 'حذف شد']);
     }
+    public function show($id)
+    {
+
+    }
 }

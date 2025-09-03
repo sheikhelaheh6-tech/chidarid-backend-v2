@@ -33,7 +33,7 @@ class AuthController extends Controller
         return response()->json(['message' => 'کد تایید ارسال شد.']);
     }
 
-    public function verifyPhone(Request $request)
+    public function verifyOtp(Request $request)
     {
         $request->validate([
             'phone' => 'required|string',
